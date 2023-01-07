@@ -1,0 +1,36 @@
+<h2>Registrar Centro</h2>
+<form [formGroup]="form"
+      (ngSubmit)="saveCentro(form.value)">
+
+  <mat-form-field class="field">
+    <input matInput placeholder="nombre" formControlName="nombre">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="field">
+    <mat-label>Tipo</mat-label>
+    <mat-select formControlName="tipo">
+      <mat-option [value]="tipos.RESTAURANTES">
+        Restaurantes
+      </mat-option>
+      <mat-option [value]="tipos.MUSEOS">
+        Museos
+      </mat-option>
+      <mat-option [value]="tipos.TEATROS">
+        Teatro
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="field">
+    <input type="number" matInput placeholder="Tarifa" formControlName="tarifa">
+  </mat-form-field>
+
+  <mat-form-field class="field">
+    <input type="number" matInput placeholder="Distancia Centro Trujillo" formControlName="distanciaCentroMetros">
+  </mat-form-field>
+
+  <button mat-button mat-raised-button>
+    GUARDAR CENTRO
+  </button>
+
+</form>

@@ -1,0 +1,19 @@
+<mat-toolbar class="header" color="primary">
+  <div>
+    UPAO - 000 118 078
+  </div>
+  <div>
+    <button mat-button mat-raised-button [routerLink]="'/listar'">
+      Centros
+    </button>
+    <button mat-button mat-raised-button [routerLink]="'/registrar'">
+      Registrar
+    </button>
+  </div>
+</mat-toolbar>
+<main>
+  <section class="content">
+    <router-outlet>
+    </router-outlet>
+  </section>
+</main>

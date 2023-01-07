@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header button {
+  margin-left: 10px;
+}
+
+main {
+  min-height: 100%;
+}
+
+.content {
+  padding: 50px;
+  max-width: 900px;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+}

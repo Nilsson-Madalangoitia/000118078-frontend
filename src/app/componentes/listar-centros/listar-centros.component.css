@@ -1,0 +1,25 @@
+
+.centros {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data span {
+  display: block;
+}
+
+.filtros {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.filtros mat-card {
+  width: 100%;
+}
